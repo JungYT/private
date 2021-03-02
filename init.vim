@@ -9,17 +9,20 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jeetsukumaran/vim-buffergator'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'lervag/vimtex'
 " NERDTree: file tree
 Plug 'scrooloose/nerdtree'
 " Initialize plugin system
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
+
 filetype plugin indent on
 syntax on
 colorscheme gruvbox
 set background=dark
+set mouse=a
 set nu
 set hlsearch
 set statusline+=%#warningmsg#
